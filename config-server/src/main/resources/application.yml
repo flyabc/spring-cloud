@@ -4,7 +4,7 @@ spring:
       server:
         git:
           uri: https://github.com/flyabc/spring-cloud
-          searchPaths: config
+          searchPaths: config-repo
           username: fly1437296235@163.com
           password: feixiang728392
   application:
