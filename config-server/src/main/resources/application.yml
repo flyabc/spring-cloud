@@ -3,9 +3,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/flyabc/spring-cloud
+          uri: https://github.com/flyabc/spring-cloud.git
           searchPaths: config
+          username: fly1437296235@163.com
+          password: feixiang728392
   application:
     name: config-server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 server:
   port: 7777
