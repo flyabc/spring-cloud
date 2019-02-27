@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/flyabc/spring-cloud.git
+          uri: https://github.com/flyabc/spring-cloud
           searchPaths: config
           username: fly1437296235@163.com
           password: feixiang728392
