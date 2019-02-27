@@ -11,7 +11,7 @@
 			<!--<pattern>%d %p [%thread] (%logger{36}:%line\)- %msg%n</pattern>-->
 			<!--格式化输出：%d:表示日期    %thread:表示线程名     %-5level:级别从左显示5个字符宽度  %msg:日志消息    %n:是换行符-->
 			<!--<pattern>%d %highlight(%p) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger) - %cyan(%msg%n)</pattern>-->
-			<pattern>%d %highlight(%p) %boldMagenta([%thread]) (%cyan(%logger{36}:%line\)) - %msg%n</pattern>
+			<pattern>%d %highlight(%p) %boldMagenta([%thread]) %cyan((%logger{36}:%line\)) - %msg%n</pattern>
             <!-- 设置字符集 -->
             <charset>UTF-8</charset>
 		</encoder>

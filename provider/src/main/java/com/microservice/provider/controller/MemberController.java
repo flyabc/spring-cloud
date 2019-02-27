@@ -6,6 +6,7 @@ import com.microservice.provider.service.IMemberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,6 +24,8 @@ import java.util.List;
 public class MemberController {
     private final static Logger logger = LoggerFactory.getLogger(MemberController.class);
 
+    @Value("server.port")
+    public String serverPort;
 
     IMemberService memberService;
     @Autowired
@@ -49,6 +52,13 @@ public class MemberController {
         System.out.println("****************"+memberId);
         System.out.println("******************"+member.toString()+"************");
         return memberService.updateById(member);
+
+    }
+    @RequestMapping("/getTest")
+    @ResponseBody
+    public String getTest(){
+
+        return serverPort;
 
     }
 }

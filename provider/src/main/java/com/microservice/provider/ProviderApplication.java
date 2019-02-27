@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 /**
  * 服务提供者
  */
-@EnableEurekaClient
+//@EnableEurekaClient
 @SpringBootApplication
 public class ProviderApplication {
     public static void main(String[] args) {
