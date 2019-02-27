@@ -4,6 +4,8 @@ spring:
       server:
         git:
           uri: https://github.com/flyabc/spring-cloud
-          searchPaths: config/helloworldConfig
+          searchPaths: config
   application:
     name: config-server
+server:
+  port: 7777
