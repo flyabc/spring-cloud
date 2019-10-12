@@ -1,4 +1,4 @@
 #server.port: 8888
 #eureka.instance.hostname: localhost
-pro.file1: 0012
+pro.file1: hello
 pro.file2: 12qw
